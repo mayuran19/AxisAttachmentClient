@@ -1,0 +1,490 @@
+01:51:46,571 DEBUG [ProjectResourceBundle] getBundle(org.apache.axis,org.apache.axis.i18n,resource,null,...)
+01:51:46,588 DEBUG [ProjectResourceBundle] loadBundle: Ignoring MissingResourceException: Can't find bundle for base name org.apache.axis.resource, locale en_US
+01:51:46,588 DEBUG [ProjectResourceBundle] Created org.apache.axis.i18n.resource, linked to parent null
+01:51:46,589 DEBUG [ProjectResourceBundle] getBundle(org.apache.axis,org.apache.axis.utils,resource,null,...)
+01:51:46,590 DEBUG [ProjectResourceBundle] loadBundle: Ignoring MissingResourceException: Can't find bundle for base name org.apache.axis.utils.resource, locale en_US
+01:51:46,590 DEBUG [ProjectResourceBundle] loadBundle: Ignoring MissingResourceException: Can't find bundle for base name org.apache.axis.resource, locale en_US
+01:51:46,590 DEBUG [ProjectResourceBundle] Root package not found, cross link to org.apache.axis.i18n.resource
+01:51:46,590 DEBUG [ProjectResourceBundle] Root package not found, cross link to org.apache.axis.i18n.resource
+01:51:46,590 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(return02)
+01:51:46,591 DEBUG [Options] getURL returned:  http://localhost:8080/axis/servlet/AxisServlet
+01:51:46,605 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(engineConfigLoadFactory)
+01:51:46,605 DEBUG [EngineConfigurationFactoryFinder] Factory org.apache.axis.configuration.EngineConfigurationFactoryServlet Ignored: unable to load/resolve class.
+01:51:46,606 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(engineFactory)
+01:51:46,606 DEBUG [EngineConfigurationFactoryFinder] Got EngineFactory: org.apache.axis.configuration.EngineConfigurationFactoryDefault
+01:51:46,608 DEBUG [AxisEngine] Enter: AxisEngine::init
+01:51:46,671 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(attachEnabled)
+01:51:46,671 DEBUG [JavaUtils] Attachment support is enabled?  true
+01:51:46,685 DEBUG [JAFDataHandlerDeserializerFactory] Enter/Exit: JAFDataHandlerDeserializerFactory(class java.lang.String, {http://xml.apache.org/xml-soap}PlainText)
+01:51:46,687 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(oddDigits00)
+01:51:46,687 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(badChars01)
+01:51:46,719 DEBUG [JAFDataHandlerDeserializerFactory] Enter/Exit: JAFDataHandlerDeserializerFactory(class java.awt.Image, {http://xml.apache.org/xml-soap}Image)
+01:51:46,720 DEBUG [JAFDataHandlerDeserializerFactory] Enter/Exit: JAFDataHandlerDeserializerFactory(class javax.mail.internet.MimeMultipart, {http://xml.apache.org/xml-soap}Multipart)
+01:51:46,721 DEBUG [JAFDataHandlerDeserializerFactory] Enter/Exit: JAFDataHandlerDeserializerFactory(interface javax.xml.transform.Source, {http://xml.apache.org/xml-soap}Source)
+01:51:46,722 DEBUG [JAFDataHandlerDeserializerFactory] Enter/Exit: JAFDataHandlerDeserializerFactory(class org.apache.axis.attachments.OctetStream, {http://xml.apache.org/xml-soap}octet-stream)
+01:51:46,723 DEBUG [JAFDataHandlerDeserializerFactory] Enter/Exit: JAFDataHandlerDeserializerFactory()
+01:51:46,743 DEBUG [AxisEngine] Exit: AxisEngine::init
+01:51:46,748 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(return02)
+01:51:46,748 DEBUG [Options] getURL returned:  https://localhost:8443/axisattachmentservice/services/urn:EchoAttachmentsService
+01:51:46,748 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(transport00)
+01:51:46,748 DEBUG [Call] Transport is org.apache.axis.transport.http.HTTPTransport@5d3f1d87
+01:51:46,749 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(exception00)
+01:51:46,750 DEBUG [BaseSerializerFactory] Exception:
+java.lang.NoSuchMethodException: org.apache.axis.encoding.ser.JAFDataHandlerSerializerFactory.create(java.lang.Class, javax.xml.namespace.QName)
+	at java.lang.Class.getMethod(Class.java:1655)
+	at org.apache.axis.encoding.ser.BaseSerializerFactory.createFactory(BaseSerializerFactory.java:254)
+	at org.apache.axis.client.Call.registerTypeMapping(Call.java:2315)
+	at org.apache.axis.client.Call.registerTypeMapping(Call.java:2297)
+	at com.mayuran19.axisattachment.client.EchoAttachment.echo(EchoAttachment.java:107)
+	at com.mayuran19.axisattachment.client.Main.main(Main.java:22)
+01:51:46,752 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(exception00)
+01:51:46,752 DEBUG [BaseDeserializerFactory] Exception:
+java.lang.NoSuchMethodException: org.apache.axis.encoding.ser.JAFDataHandlerDeserializerFactory.create(java.lang.Class, javax.xml.namespace.QName)
+	at java.lang.Class.getMethod(Class.java:1655)
+	at org.apache.axis.encoding.ser.BaseDeserializerFactory.createFactory(BaseDeserializerFactory.java:225)
+	at org.apache.axis.client.Call.registerTypeMapping(Call.java:2317)
+	at org.apache.axis.client.Call.registerTypeMapping(Call.java:2297)
+	at com.mayuran19.axisattachment.client.EchoAttachment.echo(EchoAttachment.java:107)
+	at com.mayuran19.axisattachment.client.Main.main(Main.java:22)
+01:51:46,753 DEBUG [JAFDataHandlerDeserializerFactory] Enter/Exit: JAFDataHandlerDeserializerFactory(class javax.activation.DataHandler, {urn:EchoAttachmentsService}DataHandler)
+01:51:46,759 DEBUG [OperationDesc] @19b4ac28 added parameter >name:       source
+typeEntry:  null
+mode:       IN
+position:   0
+isReturn:   false
+typeQName:  {urn:EchoAttachmentsService}DataHandler
+javaType:   class javax.activation.DataHandler
+inHeader:   false
+outHeader:  false
+@24928347<total parameters:1
+01:51:46,760 DEBUG [OperationDesc] @19b4ac28setReturnType({urn:EchoAttachmentsService}DataHandler)
+01:51:46,760 DEBUG [Call] Enter: Call::invoke(ns, meth, args)
+01:51:46,766 DEBUG [Call] operation=name:        null
+returnQName: null
+returnType:  {urn:EchoAttachmentsService}DataHandler
+returnClass: class javax.activation.DataHandler
+elementQName:null
+soapAction:  null
+style:       rpc
+use:         encoded
+numInParams: 1
+method:null
+ ParameterDesc[0]:
+  name:       source
+  typeEntry:  null
+  mode:       IN
+  position:   0
+  isReturn:   false
+  typeQName:  {urn:EchoAttachmentsService}DataHandler
+  javaType:   class javax.activation.DataHandler
+  inHeader:   false
+  outHeader:  false
+
+
+01:51:46,766 DEBUG [Call] operation.getNumParams()=1
+01:51:46,766 DEBUG [Call] getParamList number of params: 1
+01:51:46,769 DEBUG [Call] Enter: Call::invoke(RPCElement)
+01:51:46,779 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(attachEnabled)
+01:51:46,779 DEBUG [Message] Attachment support is enabled?  true
+01:51:46,784 DEBUG [SOAPPart] Enter: SOAPPart ctor(FORM_SOAPENVELOPE)
+01:51:46,785 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(setMsgForm)
+01:51:46,785 DEBUG [SOAPPart] Setting current message form to: FORM_SOAPENVELOPE (currentMessage is now org.apache.axis.message.SOAPEnvelope)
+01:51:46,785 DEBUG [SOAPPart] Exit: SOAPPart ctor()
+01:51:46,785 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(addBody00)
+01:51:46,785 DEBUG [SOAPBody] Adding body element to message...
+01:51:46,785 DEBUG [Call] Enter: Call::invoke()
+01:51:46,785 DEBUG [SOAPPart] Enter: SOAPPart::getAsSOAPEnvelope()
+01:51:46,785 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(currForm)
+01:51:46,785 DEBUG [SOAPPart] current form is FORM_SOAPENVELOPE
+01:51:46,785 DEBUG [MessageContext] MessageContext: setTargetService(EchoAttachmentsService)
+01:51:46,786 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(noService10)
+01:51:46,786 DEBUG [ConfigurationException] Exception: 
+org.apache.axis.ConfigurationException: No service named EchoAttachmentsService is available
+org.apache.axis.ConfigurationException: No service named EchoAttachmentsService is available
+	at org.apache.axis.configuration.FileProvider.getService(FileProvider.java:233)
+	at org.apache.axis.AxisEngine.getService(AxisEngine.java:311)
+	at org.apache.axis.MessageContext.setTargetService(MessageContext.java:756)
+	at org.apache.axis.client.Call.invoke(Call.java:2708)
+	at org.apache.axis.client.Call.invoke(Call.java:2443)
+	at org.apache.axis.client.Call.invoke(Call.java:2366)
+	at org.apache.axis.client.Call.invoke(Call.java:1812)
+	at com.mayuran19.axisattachment.client.EchoAttachment.echo(EchoAttachment.java:126)
+	at com.mayuran19.axisattachment.client.Main.main(Main.java:22)
+
+	at org.apache.axis.configuration.FileProvider.getService(FileProvider.java:233)
+	at org.apache.axis.AxisEngine.getService(AxisEngine.java:311)
+	at org.apache.axis.MessageContext.setTargetService(MessageContext.java:756)
+	at org.apache.axis.client.Call.invoke(Call.java:2708)
+	at org.apache.axis.client.Call.invoke(Call.java:2443)
+	at org.apache.axis.client.Call.invoke(Call.java:2366)
+	at org.apache.axis.client.Call.invoke(Call.java:1812)
+	at com.mayuran19.axisattachment.client.EchoAttachment.echo(EchoAttachment.java:126)
+	at com.mayuran19.axisattachment.client.Main.main(Main.java:22)
+01:51:46,786 DEBUG [MessageContext] MessageContext: setServiceHandler(null)
+01:51:46,786 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(targetService)
+01:51:46,787 DEBUG [Call] Target service:  EchoAttachmentsService
+01:51:46,787 DEBUG [MessageContext] MessageContext: setTargetService(null)
+01:51:46,787 DEBUG [MessageContext] MessageContext: setServiceHandler(null)
+01:51:46,789 DEBUG [SOAPPart] Enter: SOAPPart::getAsSOAPEnvelope()
+01:51:46,790 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(currForm)
+01:51:46,790 DEBUG [SOAPPart] current form is FORM_SOAPENVELOPE
+01:51:46,790 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(register00)
+01:51:46,790 DEBUG [SerializationContext] register 'soapenv' - 'http://schemas.xmlsoap.org/soap/envelope/'
+01:51:46,790 DEBUG [NSStack] NSPush (32)
+01:51:46,790 DEBUG [NSStack] NSPush (32)
+01:51:46,790 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(register00)
+01:51:46,790 DEBUG [SerializationContext] register 'soapenv' - 'http://schemas.xmlsoap.org/soap/envelope/'
+01:51:46,790 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(register00)
+01:51:46,790 DEBUG [SerializationContext] register 'xsd' - 'http://www.w3.org/2001/XMLSchema'
+01:51:46,790 DEBUG [NSStack] NSPush (32)
+01:51:46,790 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(register00)
+01:51:46,791 DEBUG [SerializationContext] register 'xsi' - 'http://www.w3.org/2001/XMLSchema-instance'
+01:51:46,791 DEBUG [NSStack] NSPush (32)
+01:51:46,791 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(startElem00)
+01:51:46,791 DEBUG [SerializationContext] Start element [http://schemas.xmlsoap.org/soap/envelope/]:Envelope
+01:51:46,791 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(startElem00)
+01:51:46,791 DEBUG [SerializationContext] Start element [http://schemas.xmlsoap.org/soap/envelope/]:Body
+01:51:46,791 DEBUG [NSStack] NSPush (32)
+01:51:46,791 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(startElem00)
+01:51:46,792 DEBUG [SerializationContext] Start element [EchoAttachmentsService]:echo
+01:51:46,792 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(register00)
+01:51:46,792 DEBUG [SerializationContext] register 'ns1' - 'EchoAttachmentsService'
+01:51:46,792 DEBUG [NSStack] NSPush (32)
+01:51:46,792 DEBUG [NSStack] NSPush (32)
+01:51:46,815 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(startElem00)
+01:51:46,815 DEBUG [SerializationContext] Start element []:source
+01:51:46,815 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(register00)
+01:51:46,815 DEBUG [SerializationContext] register 'ns2' - 'urn:EchoAttachmentsService'
+01:51:46,815 DEBUG [NSStack] NSPush (32)
+01:51:46,815 DEBUG [NSStack] NSPush (32)
+01:51:46,815 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(endElem00)
+01:51:46,816 DEBUG [SerializationContext] End element source
+01:51:46,816 DEBUG [NSStack] NSPop (32)
+01:51:46,816 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(endElem00)
+01:51:46,816 DEBUG [SerializationContext] End element ns1:echo
+01:51:46,816 DEBUG [NSStack] NSPop (32)
+01:51:46,816 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(endElem00)
+01:51:46,816 DEBUG [SerializationContext] End element soapenv:Body
+01:51:46,816 DEBUG [NSStack] NSPop (32)
+01:51:46,816 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(endElem00)
+01:51:46,816 DEBUG [SerializationContext] End element soapenv:Envelope
+01:51:46,816 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(empty00)
+01:51:46,817 DEBUG [NSStack] NSPop (empty)
+01:51:46,817 DEBUG [Call] <?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><soapenv:Body><ns1:echo soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:ns1="EchoAttachmentsService"><source href="67835B19B5E40781471A4BC0A4C65107" xsi:type="ns2:DataHandler" xmlns:ns2="urn:EchoAttachmentsService"/></ns1:echo></soapenv:Body></soapenv:Envelope>
+01:51:46,817 DEBUG [AxisClient] Enter: AxisClient::invoke
+01:51:46,817 DEBUG [AxisClient] EngineHandler: null
+01:51:46,820 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(axisUserAgent)
+01:51:46,824 DEBUG [SimpleChain] Enter: SimpleChain::invoke
+01:51:46,824 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(enter00)
+01:51:46,824 DEBUG [HTTPSender] Enter:  HTTPSender::invoke
+01:51:46,825 DEBUG [SOAPPart] Enter: SOAPPart::saveChanges
+01:51:46,826 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(register00)
+01:51:46,826 DEBUG [SerializationContext] register 'soapenv' - 'http://schemas.xmlsoap.org/soap/envelope/'
+01:51:46,826 DEBUG [NSStack] NSPush (32)
+01:51:46,826 DEBUG [NSStack] NSPush (32)
+01:51:46,826 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(register00)
+01:51:46,826 DEBUG [SerializationContext] register 'soapenv' - 'http://schemas.xmlsoap.org/soap/envelope/'
+01:51:46,826 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(register00)
+01:51:46,826 DEBUG [SerializationContext] register 'xsd' - 'http://www.w3.org/2001/XMLSchema'
+01:51:46,827 DEBUG [NSStack] NSPush (32)
+01:51:46,827 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(register00)
+01:51:46,827 DEBUG [SerializationContext] register 'xsi' - 'http://www.w3.org/2001/XMLSchema-instance'
+01:51:46,827 DEBUG [NSStack] NSPush (32)
+01:51:46,827 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(startElem00)
+01:51:46,827 DEBUG [SerializationContext] Start element [http://schemas.xmlsoap.org/soap/envelope/]:Envelope
+01:51:46,827 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(startElem00)
+01:51:46,827 DEBUG [SerializationContext] Start element [http://schemas.xmlsoap.org/soap/envelope/]:Body
+01:51:46,827 DEBUG [NSStack] NSPush (32)
+01:51:46,827 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(startElem00)
+01:51:46,827 DEBUG [SerializationContext] Start element [EchoAttachmentsService]:echo
+01:51:46,827 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(register00)
+01:51:46,828 DEBUG [SerializationContext] register 'ns1' - 'EchoAttachmentsService'
+01:51:46,828 DEBUG [NSStack] NSPush (32)
+01:51:46,828 DEBUG [NSStack] NSPush (32)
+01:51:46,828 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(startElem00)
+01:51:46,828 DEBUG [SerializationContext] Start element []:source
+01:51:46,828 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(register00)
+01:51:46,828 DEBUG [SerializationContext] register 'ns2' - 'urn:EchoAttachmentsService'
+01:51:46,828 DEBUG [NSStack] NSPush (32)
+01:51:46,828 DEBUG [NSStack] NSPush (32)
+01:51:46,828 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(endElem00)
+01:51:46,828 DEBUG [SerializationContext] End element source
+01:51:46,829 DEBUG [NSStack] NSPop (32)
+01:51:46,829 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(endElem00)
+01:51:46,829 DEBUG [SerializationContext] End element ns1:echo
+01:51:46,829 DEBUG [NSStack] NSPop (32)
+01:51:46,829 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(endElem00)
+01:51:46,829 DEBUG [SerializationContext] End element soapenv:Body
+01:51:46,829 DEBUG [NSStack] NSPop (32)
+01:51:46,829 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(endElem00)
+01:51:46,829 DEBUG [SerializationContext] End element soapenv:Envelope
+01:51:46,829 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(empty00)
+01:51:46,829 DEBUG [NSStack] NSPop (empty)
+01:51:46,829 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(setMsgForm)
+01:51:46,830 DEBUG [SOAPPart] Setting current message form to: FORM_OPTIMIZED (currentMessage is now org.apache.axis.utils.ByteArray)
+01:51:46,830 DEBUG [SOAPPart] Exit: SOAPPart::saveChanges(): org.apache.axis.utils.ByteArray@77b81acf
+01:51:46,830 DEBUG [SOAPPart] Enter: SOAPPart::saveChanges
+01:51:46,830 DEBUG [SOAPPart] Enter: SOAPPart::saveChanges
+01:51:46,832 DEBUG [SOAPPart] Enter: SOAPPart::getAsBytes
+01:51:46,832 DEBUG [SOAPPart] Exit: SOAPPart::getAsBytes
+01:51:47,137 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(createdSSL00)
+01:51:47,137 DEBUG [DefaultSocketFactory] Created an SSL connection
+01:51:47,138 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(xmlSent00)
+01:51:47,138 DEBUG [HTTPSender] XML sent:
+01:51:47,138 DEBUG [HTTPSender] ---------------------------------------------------
+01:51:47,138 DEBUG [SOAPPart] Enter: SOAPPart::saveChanges
+01:51:47,175 DEBUG [HTTPSender] POST /axisattachmentservice/services/urn:EchoAttachmentsService HTTP/1.0
+Content-Type: application/dime
+Accept: application/soap+xml, application/dime, multipart/related, text/*
+User-Agent: Axis/1.4
+Host: localhost:8443
+Cache-Control: no-cache
+Pragma: no-cache
+SOAPAction: ""
+Content-Length: 736
+
+    ) )  �uuid:714C6C40-4531-442E-A498-3AC614200295   http://schemas.xmlsoap.org/soap/envelope/   <?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><soapenv:Body><ns1:echo soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:ns1="EchoAttachmentsService"><source href="67835B19B5E40781471A4BC0A4C65107" xsi:type="ns2:DataHandler" xmlns:ns2="urn:EchoAttachmentsService"/></ns1:echo></soapenv:Body></soapenv:Envelope>  
+     
+   N67835B19B5E40781471A4BC0A4C65107text/plain  DSC00371.jpg
+DSC00372.jpg
+DSC00374.jpg
+DSC00375.jpg
+fwdhijustsee.zip
+test.txt
+  
+01:51:47,190 DEBUG [HTTPSender] HTTP/1.1 200 OK
+01:51:47,190 DEBUG [HTTPSender] Server Apache-Coyote/1.1
+01:51:47,190 DEBUG [HTTPSender] Content-Type application/dime
+01:51:47,190 DEBUG [HTTPSender] Date Tue, 17 Sep 2013 17:51:47 GMT
+01:51:47,191 DEBUG [HTTPSender] Connection close
+01:51:47,193 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(streamNo)
+01:51:47,193 DEBUG [DimeDelimitedInputStream] New boundary stream number:  1
+01:51:47,193 DEBUG [DimeDelimitedInputStream] MB:true, ME:false, CF:falseOption length:0, ID length:41, typeLength:41, TYPE_T:URI
+01:51:47,193 DEBUG [DimeDelimitedInputStream] id:"uuid:714C6C40-4531-442E-A498-3AC614200295"
+01:51:47,193 DEBUG [DimeDelimitedInputStream] type:"http://schemas.xmlsoap.org/soap/envelope/"
+01:51:47,193 DEBUG [DimeDelimitedInputStream] recordlength:"519"
+01:51:47,194 DEBUG [SOAPPart] Enter: SOAPPart ctor(FORM_INPUTSTREAM)
+01:51:47,194 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(setMsgForm)
+01:51:47,194 DEBUG [SOAPPart] Setting current message form to: FORM_INPUTSTREAM (currentMessage is now org.apache.axis.attachments.MultiPartDimeInputStream)
+01:51:47,194 DEBUG [SOAPPart] Exit: SOAPPart ctor()
+01:51:47,194 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(no00)
+01:51:47,194 DEBUG [HTTPSender] 
+no Content-Length
+01:51:47,194 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(xmlRecd00)
+01:51:47,194 DEBUG [HTTPSender] 
+XML received:
+01:51:47,194 DEBUG [HTTPSender] -----------------------------------------------
+01:51:47,194 DEBUG [SOAPPart] Enter: SOAPPart::getAsSOAPEnvelope()
+01:51:47,194 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(currForm)
+01:51:47,194 DEBUG [SOAPPart] current form is FORM_INPUTSTREAM
+01:51:47,200 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(pushHandler00)
+01:51:47,201 DEBUG [DeserializationContext] Pushing handler org.apache.axis.message.EnvelopeHandler@22c190b5
+01:51:47,203 DEBUG [DeserializationContext] Enter: DeserializationContext::startPrefixMapping(soapenv, http://schemas.xmlsoap.org/soap/envelope/)
+01:51:47,203 DEBUG [NSStack] NSPush (32)
+01:51:47,204 DEBUG [NSStack] NSPush (32)
+01:51:47,204 DEBUG [DeserializationContext] Exit: DeserializationContext::startPrefixMapping()
+01:51:47,204 DEBUG [DeserializationContext] Enter: DeserializationContext::startPrefixMapping(xsd, http://www.w3.org/2001/XMLSchema)
+01:51:47,204 DEBUG [NSStack] NSPush (32)
+01:51:47,204 DEBUG [DeserializationContext] Exit: DeserializationContext::startPrefixMapping()
+01:51:47,204 DEBUG [DeserializationContext] Enter: DeserializationContext::startPrefixMapping(xsi, http://www.w3.org/2001/XMLSchema-instance)
+01:51:47,204 DEBUG [NSStack] NSPush (32)
+01:51:47,204 DEBUG [DeserializationContext] Exit: DeserializationContext::startPrefixMapping()
+01:51:47,204 DEBUG [DeserializationContext] Enter: DeserializationContext::startElement(http://schemas.xmlsoap.org/soap/envelope/, Envelope)
+01:51:47,204 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(pushHandler00)
+01:51:47,204 DEBUG [DeserializationContext] Pushing handler org.apache.axis.message.EnvelopeBuilder@6977f8ad
+01:51:47,204 DEBUG [DeserializationContext] Pushing element Envelope
+01:51:47,204 DEBUG [DeserializationContext] Exit: DeserializationContext::startElement()
+01:51:47,204 DEBUG [DeserializationContext] Enter: DeserializationContext::startElement(http://schemas.xmlsoap.org/soap/envelope/, Body)
+01:51:47,205 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(pushHandler00)
+01:51:47,206 DEBUG [DeserializationContext] Pushing handler org.apache.axis.message.BodyBuilder@4270c0d1
+01:51:47,206 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(newElem00)
+01:51:47,206 DEBUG [MessageElement] New MessageElement (org.apache.axis.message.SOAPBody@7882fb6a) named {soapenv}Body
+01:51:47,206 DEBUG [DeserializationContext] Pushing element Body
+01:51:47,206 DEBUG [NSStack] NSPush (32)
+01:51:47,206 DEBUG [DeserializationContext] Exit: DeserializationContext::startElement()
+01:51:47,206 DEBUG [DeserializationContext] Enter: DeserializationContext::startPrefixMapping(ns1, EchoAttachmentsService)
+01:51:47,206 DEBUG [NSStack] NSPush (32)
+01:51:47,206 DEBUG [NSStack] NSPush (32)
+01:51:47,206 DEBUG [DeserializationContext] Exit: DeserializationContext::startPrefixMapping()
+01:51:47,206 DEBUG [DeserializationContext] Enter: DeserializationContext::startElement(EchoAttachmentsService, echoResponse)
+01:51:47,207 DEBUG [BodyBuilder] Enter: BodyBuilder::onStartChild()
+01:51:47,207 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(newElem00)
+01:51:47,207 DEBUG [MessageElement] New MessageElement (org.apache.axis.message.RPCElement@5f4829f5) named {ns1}echoResponse
+01:51:47,207 DEBUG [MessageElement]   soapenv:encodingStyle = 'http://schemas.xmlsoap.org/soap/encoding/'
+01:51:47,207 DEBUG [BodyBuilder] Exit: BodyBuilder::onStartChild()
+01:51:47,207 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(pushHandler00)
+01:51:47,207 DEBUG [DeserializationContext] Pushing handler org.apache.axis.message.SOAPHandler@7abac4b1
+01:51:47,207 DEBUG [DeserializationContext] Pushing element echoResponse
+01:51:47,207 DEBUG [DeserializationContext] Exit: DeserializationContext::startElement()
+01:51:47,207 DEBUG [DeserializationContext] Enter: DeserializationContext::startPrefixMapping(ns2, urn:EchoAttachmentsService)
+01:51:47,207 DEBUG [NSStack] NSPush (32)
+01:51:47,208 DEBUG [NSStack] NSPush (32)
+01:51:47,208 DEBUG [DeserializationContext] Exit: DeserializationContext::startPrefixMapping()
+01:51:47,208 DEBUG [DeserializationContext] Enter: DeserializationContext::startElement(, returnqname)
+01:51:47,208 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(pushHandler00)
+01:51:47,208 DEBUG [DeserializationContext] Pushing handler org.apache.axis.message.SOAPHandler@7bc77f69
+01:51:47,208 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(newElem00)
+01:51:47,208 DEBUG [MessageElement] New MessageElement (org.apache.axis.message.MessageElement@667e05fb) named {}returnqname
+01:51:47,208 DEBUG [MessageElement]   href = 'FF1C0262771D4AC147CAED3B0F16FC76'
+01:51:47,208 DEBUG [MessageElement]   xsi:type = 'ns2:DataHandler'
+01:51:47,208 DEBUG [DeserializationContext] Pushing element returnqname
+01:51:47,208 DEBUG [DeserializationContext] Exit: DeserializationContext::startElement()
+01:51:47,208 DEBUG [DeserializationContext] Enter: DeserializationContext::endElement(, returnqname)
+01:51:47,208 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(popHandler00)
+01:51:47,208 DEBUG [DeserializationContext] Popping handler org.apache.axis.message.SOAPHandler@7bc77f69
+01:51:47,208 DEBUG [NSStack] NSPop (32)
+01:51:47,208 DEBUG [DeserializationContext] Popped element stack to org.apache.axis.message.RPCElement:echoResponse
+01:51:47,208 DEBUG [DeserializationContext] Exit: DeserializationContext::endElement()
+01:51:47,209 DEBUG [DeserializationContext] Enter: DeserializationContext::endPrefixMapping(ns2)
+01:51:47,209 DEBUG [DeserializationContext] Exit: DeserializationContext::endPrefixMapping()
+01:51:47,209 DEBUG [DeserializationContext] Enter: DeserializationContext::endElement(EchoAttachmentsService, echoResponse)
+01:51:47,209 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(popHandler00)
+01:51:47,209 DEBUG [DeserializationContext] Popping handler org.apache.axis.message.SOAPHandler@7abac4b1
+01:51:47,209 DEBUG [NSStack] NSPop (32)
+01:51:47,209 DEBUG [DeserializationContext] Popped element stack to org.apache.axis.message.SOAPBody:Body
+01:51:47,209 DEBUG [DeserializationContext] Exit: DeserializationContext::endElement()
+01:51:47,209 DEBUG [DeserializationContext] Enter: DeserializationContext::endPrefixMapping(ns1)
+01:51:47,209 DEBUG [DeserializationContext] Exit: DeserializationContext::endPrefixMapping()
+01:51:47,209 DEBUG [DeserializationContext] Enter: DeserializationContext::endElement(http://schemas.xmlsoap.org/soap/envelope/, Body)
+01:51:47,209 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(popHandler00)
+01:51:47,209 DEBUG [DeserializationContext] Popping handler org.apache.axis.message.BodyBuilder@4270c0d1
+01:51:47,209 DEBUG [NSStack] NSPop (32)
+01:51:47,209 DEBUG [DeserializationContext] Popped element stack to org.apache.axis.message.SOAPEnvelope:Envelope
+01:51:47,209 DEBUG [DeserializationContext] Exit: DeserializationContext::endElement()
+01:51:47,209 DEBUG [DeserializationContext] Enter: DeserializationContext::endElement(http://schemas.xmlsoap.org/soap/envelope/, Envelope)
+01:51:47,210 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(popHandler00)
+01:51:47,210 DEBUG [DeserializationContext] Popping handler org.apache.axis.message.EnvelopeBuilder@6977f8ad
+01:51:47,210 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(empty00)
+01:51:47,210 DEBUG [NSStack] NSPop (empty)
+01:51:47,210 DEBUG [DeserializationContext] Popped element stack to null
+01:51:47,210 DEBUG [DeserializationContext] Exit: DeserializationContext::endElement()
+01:51:47,210 DEBUG [DeserializationContext] Enter: DeserializationContext::endPrefixMapping(soapenv)
+01:51:47,210 DEBUG [DeserializationContext] Exit: DeserializationContext::endPrefixMapping()
+01:51:47,210 DEBUG [DeserializationContext] Enter: DeserializationContext::endPrefixMapping(xsd)
+01:51:47,210 DEBUG [DeserializationContext] Exit: DeserializationContext::endPrefixMapping()
+01:51:47,210 DEBUG [DeserializationContext] Enter: DeserializationContext::endPrefixMapping(xsi)
+01:51:47,210 DEBUG [DeserializationContext] Exit: DeserializationContext::endPrefixMapping()
+01:51:47,210 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(bStreamClosed)
+01:51:47,210 DEBUG [DimeDelimitedInputStream] Boundary stream number 1 is closed
+01:51:47,210 DEBUG [DeserializationContext] Enter: DeserializationContext::endDocument()
+01:51:47,211 DEBUG [DeserializationContext] Exit: DeserializationContext::endDocument()
+01:51:47,211 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(setMsgForm)
+01:51:47,211 DEBUG [SOAPPart] Setting current message form to: FORM_SOAPENVELOPE (currentMessage is now org.apache.axis.message.SOAPEnvelope)
+01:51:47,211 DEBUG [SOAPPart] Exit: SOAPPart::getAsSOAPEnvelope
+01:51:47,211 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(register00)
+01:51:47,211 DEBUG [SerializationContext] register 'soapenv' - 'http://schemas.xmlsoap.org/soap/envelope/'
+01:51:47,211 DEBUG [NSStack] NSPush (32)
+01:51:47,211 DEBUG [NSStack] NSPush (32)
+01:51:47,211 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(register00)
+01:51:47,211 DEBUG [SerializationContext] register 'xsd' - 'http://www.w3.org/2001/XMLSchema'
+01:51:47,211 DEBUG [NSStack] NSPush (32)
+01:51:47,211 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(register00)
+01:51:47,211 DEBUG [SerializationContext] register 'xsi' - 'http://www.w3.org/2001/XMLSchema-instance'
+01:51:47,211 DEBUG [NSStack] NSPush (32)
+01:51:47,212 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(startElem00)
+01:51:47,212 DEBUG [SerializationContext] Start element [http://schemas.xmlsoap.org/soap/envelope/]:Envelope
+01:51:47,212 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(startElem00)
+01:51:47,212 DEBUG [SerializationContext] Start element [http://schemas.xmlsoap.org/soap/envelope/]:Body
+01:51:47,212 DEBUG [NSStack] NSPush (32)
+01:51:47,213 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(register00)
+01:51:47,213 DEBUG [SerializationContext] register 'ns1' - 'EchoAttachmentsService'
+01:51:47,213 DEBUG [NSStack] NSPush (32)
+01:51:47,213 DEBUG [NSStack] NSPush (32)
+01:51:47,213 DEBUG [SAXOutputter] SAXOutputter.startElement ['EchoAttachmentsService' echoResponse]
+01:51:47,213 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(startElem00)
+01:51:47,213 DEBUG [SerializationContext] Start element [EchoAttachmentsService]:echoResponse
+01:51:47,213 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(register00)
+01:51:47,213 DEBUG [SerializationContext] register 'ns2' - 'urn:EchoAttachmentsService'
+01:51:47,213 DEBUG [NSStack] NSPush (32)
+01:51:47,213 DEBUG [NSStack] NSPush (32)
+01:51:47,213 DEBUG [SAXOutputter] SAXOutputter.startElement ['' returnqname]
+01:51:47,213 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(startElem00)
+01:51:47,213 DEBUG [SerializationContext] Start element []:returnqname
+01:51:47,214 DEBUG [SAXOutputter] SAXOutputter.endElement ['' returnqname]
+01:51:47,214 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(endElem00)
+01:51:47,214 DEBUG [SerializationContext] End element returnqname
+01:51:47,214 DEBUG [NSStack] NSPop (32)
+01:51:47,214 DEBUG [SAXOutputter] SAXOutputter.endElement ['EchoAttachmentsService' echoResponse]
+01:51:47,214 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(endElem00)
+01:51:47,214 DEBUG [SerializationContext] End element ns1:echoResponse
+01:51:47,214 DEBUG [NSStack] NSPop (32)
+01:51:47,214 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(endElem00)
+01:51:47,214 DEBUG [SerializationContext] End element soapenv:Body
+01:51:47,214 DEBUG [NSStack] NSPop (32)
+01:51:47,214 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(endElem00)
+01:51:47,214 DEBUG [SerializationContext] End element soapenv:Envelope
+01:51:47,214 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(empty00)
+01:51:47,214 DEBUG [NSStack] NSPop (empty)
+01:51:47,214 DEBUG [HTTPSender] <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><soapenv:Body><ns1:echoResponse soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:ns1="EchoAttachmentsService"><returnqname href="FF1C0262771D4AC147CAED3B0F16FC76" xsi:type="ns2:DataHandler" xmlns:ns2="urn:EchoAttachmentsService"/></ns1:echoResponse></soapenv:Body></soapenv:Envelope>
+01:51:47,214 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(exit00)
+01:51:47,214 DEBUG [HTTPSender] Exit:  HTTPDispatchHandler::invoke
+01:51:47,215 DEBUG [SimpleChain] Exit: SimpleChain::invoke
+01:51:47,215 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(semanticCheck00)
+01:51:47,215 DEBUG [MustUnderstandChecker] Doing SOAP semantic checks...
+01:51:47,215 DEBUG [SOAPPart] Enter: SOAPPart::getAsSOAPEnvelope()
+01:51:47,215 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(currForm)
+01:51:47,215 DEBUG [SOAPPart] current form is FORM_SOAPENVELOPE
+01:51:47,215 DEBUG [AxisClient] Exit: AxisClient::invoke
+01:51:47,215 DEBUG [SOAPPart] Enter: SOAPPart::getAsSOAPEnvelope()
+01:51:47,215 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(currForm)
+01:51:47,215 DEBUG [SOAPPart] current form is FORM_SOAPENVELOPE
+01:51:47,215 DEBUG [Call] Exit: Call::invoke()
+01:51:47,215 DEBUG [SOAPPart] Enter: SOAPPart::getAsSOAPEnvelope()
+01:51:47,215 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(currForm)
+01:51:47,215 DEBUG [SOAPPart] current form is FORM_SOAPENVELOPE
+01:51:47,216 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(pushHandler00)
+01:51:47,216 DEBUG [DeserializationContext] Pushing handler org.apache.axis.message.EnvelopeHandler@58b0cea2
+01:51:47,216 DEBUG [DeserializationContext] Enter: DeserializationContext::startPrefixMapping(ns1, EchoAttachmentsService)
+01:51:47,216 DEBUG [NSStack] NSPush (32)
+01:51:47,216 DEBUG [NSStack] NSPush (32)
+01:51:47,216 DEBUG [DeserializationContext] Exit: DeserializationContext::startPrefixMapping()
+01:51:47,216 DEBUG [DeserializationContext] Enter: DeserializationContext::startElement(EchoAttachmentsService, echoResponse)
+01:51:47,216 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(pushHandler00)
+01:51:47,217 DEBUG [DeserializationContext] Pushing handler org.apache.axis.message.RPCHandler@3fce1b2b
+01:51:47,217 DEBUG [DeserializationContext] Exit: DeserializationContext::startElement()
+01:51:47,217 DEBUG [DeserializationContext] Enter: DeserializationContext::startPrefixMapping(ns2, urn:EchoAttachmentsService)
+01:51:47,217 DEBUG [NSStack] NSPush (32)
+01:51:47,217 DEBUG [NSStack] NSPush (32)
+01:51:47,217 DEBUG [DeserializationContext] Exit: DeserializationContext::startPrefixMapping()
+01:51:47,217 DEBUG [DeserializationContext] Enter: DeserializationContext::startElement(, returnqname)
+01:51:47,217 DEBUG [RPCHandler] Enter: RPCHandler.onStartChild()
+01:51:47,217 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(typeFromAttr00)
+01:51:47,217 DEBUG [RPCHandler] Type from attributes is:  {urn:EchoAttachmentsService}DataHandler
+01:51:47,218 DEBUG [RPCHandler] Exit: RPCHandler.onStartChild()
+01:51:47,218 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(pushHandler00)
+01:51:47,218 DEBUG [DeserializationContext] Pushing handler org.apache.axis.encoding.ser.JAFDataHandlerDeserializer@99a3769
+01:51:47,218 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(gotType00)
+01:51:47,218 DEBUG [JAFDataHandlerDeserializer] Deser got type {urn:EchoAttachmentsService}DataHandler
+01:51:47,218 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(streamNo)
+01:51:47,218 DEBUG [DimeDelimitedInputStream] New boundary stream number:  2
+01:51:47,219 DEBUG [DimeDelimitedInputStream] MB:false, ME:true, CF:falseOption length:0, ID length:32, typeLength:10, TYPE_T:MIME
+01:51:47,219 DEBUG [DimeDelimitedInputStream] id:"FF1C0262771D4AC147CAED3B0F16FC76"
+01:51:47,219 DEBUG [DimeDelimitedInputStream] type:"text/plain"
+01:51:47,219 DEBUG [DimeDelimitedInputStream] recordlength:"78"
+01:51:47,221 DEBUG [DeserializationContext] Exit: DeserializationContext::startElement()
+01:51:47,221 DEBUG [DeserializationContext] Enter: DeserializationContext::endElement(, returnqname)
+01:51:47,221 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(popHandler00)
+01:51:47,221 DEBUG [DeserializationContext] Popping handler org.apache.axis.encoding.ser.JAFDataHandlerDeserializer@99a3769
+01:51:47,221 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(setValueInTarget00)
+01:51:47,222 DEBUG [DeserializerImpl] Set value javax.activation.DataHandler@67c12a1 in target org.apache.axis.message.RPCParamTarget@3bab0b5a
+01:51:47,222 DEBUG [NSStack] NSPop (32)
+01:51:47,222 DEBUG [DeserializationContext] Popped element stack to org.apache.axis.message.RPCElement:echoResponse
+01:51:47,222 DEBUG [DeserializationContext] Exit: DeserializationContext::endElement()
+01:51:47,222 DEBUG [DeserializationContext] Enter: DeserializationContext::endPrefixMapping(ns2)
+01:51:47,222 DEBUG [DeserializationContext] Exit: DeserializationContext::endPrefixMapping()
+01:51:47,222 DEBUG [DeserializationContext] Enter: DeserializationContext::endElement(EchoAttachmentsService, echoResponse)
+01:51:47,222 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(popHandler00)
+01:51:47,222 DEBUG [DeserializationContext] Popping handler org.apache.axis.message.RPCHandler@3fce1b2b
+01:51:47,222 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(setProp00)
+01:51:47,222 DEBUG [RPCHandler] Setting MessageContext property in RPCHandler.endElement().
+01:51:47,222 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(empty00)
+01:51:47,222 DEBUG [NSStack] NSPop (empty)
+01:51:47,222 DEBUG [DeserializationContext] Popped element stack to org.apache.axis.message.SOAPBody:Body
+01:51:47,222 DEBUG [DeserializationContext] Exit: DeserializationContext::endElement()
+01:51:47,222 DEBUG [Call] Exit: Call::invoke(RPCElement)
+01:51:47,223 DEBUG [Call] Exit: Call::invoke(ns, meth, args)
+01:51:47,223 DEBUG [TIME] axis.Call.invoke: 463 {EchoAttachmentsService}echo
+01:51:47,223 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(maxCached)
+01:51:47,223 DEBUG [ManagedMemoryDataSource] ManagedMemoryDataSource.flushToDisk maximum cached 16384, total memory 78.
+01:51:47,223 DEBUG [ProjectResourceBundle] org.apache.axis.i18n.resource::handleGetObject(diskCache)
+01:51:47,223 DEBUG [ManagedMemoryDataSource] Disk cache file name "/tmp/Axis7527981583149847424.att".
